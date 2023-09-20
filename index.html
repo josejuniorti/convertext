@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>ConverText - Converter texto para Maiscúlo ou Minúsculo</title>
+    <meta name="description" content="Conveter textos para Maiscúlo Minúsculo Uppercase Lowercase Converta as letras do seu texto para maiscúlas ou minúsculas.">
+    <meta name="keywords" content="converter, textos, maiscúlo, minúsculo, Uppercase, Lowercase, palavras, letras, Linha">
+    <meta name="author" content="José Júnior">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="gwUO7V6P82JIRSbFbJU-N61bVpjyONTZL52lAy7iK5Y" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+  </head>
+  <body>
+    <header class="header">
+      <h1>ConverText</h1>
+      <h2>Bem vindo ao ConverText, Adicione o seu texto no campo abaixo.</h2>
+    </header>
+    <main>
+      <section class="convert-section">
+        <div id="copied" class="copied_txt">
+          <p>Copiado!</p>
+        </div>
+        <textarea type="text" class="text_area" autofocus id="text_area" style="width:95%; height:60vh;" placeholder="Escreva seu texto aqui"></textarea>
+        <div class="copyreload_b_div">
+          <div class="copy_div">
+            <button type="button" class="copy_button" onclick='copiedTxt()' id="copy">Copiar</button>
+          </div>
+          <div class="reload_div">
+            <button type="button" class="reload_button" onclick='window.location.reload()'>Apagar</button>
+          </div>
+        </div>
+        <div class="tt_div">
+          <button class="tt_div_btn" type="button" onclick='convUpper()'>Maiscúlo</button>
+          <button class="tt_div_btn" type="button" onclick='convLower()'>Minúsculo</button>
+          <button class="tt_div_btn" type="button" onclick='convNormal()'>Original</button>  
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&#169; Copyright 2022 - ConverText - Desenvolvido por <a href="https://josejuniordev.vercel.app" title="José Júnior">José Júnior</a></p>
+    </footer>
+  </body>
+</html>
