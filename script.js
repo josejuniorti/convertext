@@ -12,7 +12,7 @@ btn.addEventListener('click', function(e) {
 function copiedTxt() {
   let x = document.getElementById("copied");            
   x.style.display = 'block';
-  setTimeout(function(){ x.style.display = 'none';}, 1000);
+  setTimeout(function(){ x.style.display = 'none';}, 3000);
   //document.getElementById('copied').style.display = 'block';
 
 }
